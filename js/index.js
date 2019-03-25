@@ -55,13 +55,13 @@
     /**********************************************
      *  Knapp klick på elementet canvas
      *********************************************/
-    var t=1,k=1,d=1;
+    var tr=1,kv=1,ci=1;
     function clickCanvas(id){
         var c = document.getElementById(id);
 
-        if(id ==="content1" && t==1 ) {c.style.display = "none"; t=0;}
-        if(id ==="content2" && k==1)  {c.style.display = "none"; k=0;}
-        if(id ==="content3" && d==1)  {c.style.display = "none"; d=0;} 
+        if(id ==="content1" && tr==1 ) {c.style.display = "none"; tr=0;}
+        if(id ==="content2" && kv==1)  {c.style.display = "none"; kv=0;}
+        if(id ==="content3" && ci==1)  {c.style.display = "none"; ci=0;} 
 
         console.log(id);
         console.log(document.getElementById(id).style.display);
