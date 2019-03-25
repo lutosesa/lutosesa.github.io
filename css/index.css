@@ -41,7 +41,7 @@
 
 header #logo{
 	font-family: 'Kaushan Script', cursive;
-
+	padding-top: 25px;
 	font-size: 55px;
 	text-align: center;
 	height: 80px ;
@@ -65,7 +65,7 @@ nav .canvas{
 
 nav .canvas:hover,
     .canvas:active {
-	background:rgba(31, 206, 15, 0.808);
+	background:rgba(32, 139, 22, 0.808);
 } 
 
 
