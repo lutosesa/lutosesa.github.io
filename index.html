@@ -1,100 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap</title>
+<head>
+	<meta charset="UTF-8">
 
-    <!-- Bootstrap -->
-    <link href="v3.3.7/css/bootstrap.css" rel="stylesheet">
-  </head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <div class="container"> 
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
+	<meta name="author" content="Tutorials till hands">
 
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Varumärke</a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Link 1 <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link 2</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <!-- <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li> -->
-                </ul>
-              </li>
-            </ul>            
+	<meta name="description" content="Här är beskrivningen av webbplatsen">
+
+	<meta name="keywords" content="tutorials, html, web development">
+
+	<title>Projekt 3-Responsiv web design</title>
+
+	<link rel="icon" href="img/img01.jpg">
+
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+<div class="container">
+
+	<!--=====================================
+		Row 1
+	======================================-->
+
+	<header class="row">
+		
+            <div id="logo" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Canvas</div>		
+
+	</header>
+
+	<!--=====================================
+		Row 2
+	======================================-->
+
+	<nav class="row">
+		 
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<canvas class="canvas" id="canvas1" onclick="clickCanvas('content1');"></canvas>
+				<div id="content1" style="display:none">
+                	<p>This is what a triangle looks like, This is what a triangle looks like, This is what a triangle looks</p>
+				</div>
+            </div>
             
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <canvas class="canvas" id="canvas2" onclick="clickCanvas('content2');"></canvas>
+				<div id="content2" style="display:none">
+					<p>This is what a triangle looks like, This is what a triangle looks like, This is what a triangle looks</p>
+				</div>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <canvas class="canvas" id="canvas3" onclick="clickCanvas('content3');"></canvas>
+				<div id="content3" style="display:none">
+					<p>This is what a triangle looks like, This is what a triangle looks like, This is what a triangle looks</p>
+				</div>
+            </div>       
 
-      <div class="row">
-            <section class="col-sm-4 col-md-4">
-              <div class="thumbnail">
-                <img src="img/img01.jpg" alt="...">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p>
-                    <a href="#" class="btn btn-primary" role="button">Button</a> 
-                    <a href="#" class="btn btn-default" role="button">Button</a>
-                  </p>
-                </div>
-              </div>
-            </section>
+	</nav>
 
-            <section class="col-sm-4 col-md-4">
-                  <div class="thumbnail">
-                    <img src="img/img02.jpg" alt="...">
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                    </div>
-                  </div>
-                </section>
+	<!--=====================================
+		Row 3
+	======================================-->
 
-                  <section class="col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                      <img src="img/img03.jpg" alt="...">
-                      <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                      </div>
-                    </div>
-                  </section>
-          </div>
+	<section id="section3" class="row">
+		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			
+			<center>
+				<img src="img/img01.jpg">
+	        	<h1>Lorem Ipsum</h1>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </center>
+            
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			
+			<center>
+				<img src="img/img02.jpg">
+	        	<h1>Lorem Ipsum</h1>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </center>
+            
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			
+			<center>
+				<img src="img/img03.jpg">
+	        	<h1>Lorem Ipsum</h1>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </center>
+            
+		</div>
+
+	</section>
+
+	<!--=====================================
+		Part 4
+	======================================-->
+
+	<section id="section4" class="row">
+				
+		<aside id="left" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+			
+			<ul>
+        
+	        	<li><a href="#">Link 1</a></li>
+	            <li><a href="#">Link 2</a></li>
+	            <li><a href="#">Link 3</a></li>
+	            <li><a href="#">Link 4</a></li>
+  
+        	</ul>
+
+		</aside>
+
+		<article class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			
+			<h1>Lorem Ipsum</h1>
+	    	<p><img src="img/foto.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet libero in leo suscipit consequat. Vivamus et nunc neque. Proin vel eros nec nisi luctus laoreet sed vitae nulla. Sed non nulla interdum, consequat turpis at, euismod leo. Fusce fringilla convallis viverra. Integer vel lacus id tortor viverra luctus dapibus et nulla. Integer scelerisque neque eget tortor bibendum, non ultricies tellus vehicula. Morbi imperdiet gravida nisl, non congue ante fringilla in. Mauris laoreet accumsan ultrices.</p>
+	        <br>
+	        <p>Sed feugiat, magna non sagittis porttitor, massa risus iaculis nisi, id semper ante nisi sed justo. In placerat ipsum in metus consectetur suscipit. Donec ante nibh, pulvinar eu lectus vel, aliquam cursus enim. Proin nibh eros, tincidunt et est quis, elementum ultrices eros. Mauris accumsan ac metus in viverra.Integer fringilla urna eu fringilla blandit. Suspendisse et tellus venenatis, aliquam sapien at, pharetra orci. Etiam elit arcu, aliquam eu turpis bibendum, facilisis dapibus augue. </p>		
+
+		</article>
+
+		<aside id="right" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+			
+			<h1>Login</h1>
+        
+        	<form>
+        
+        		<input type="text" placeholder="User">
+            
+            	<input type="password" placeholder="Password">
+            
+            	<input type="submit" value="Submit">
+        
+        	</form>
+
+		</aside>
 
 
-    </div> 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="v3.3.7/js/jquery.js"></script>
-    <script src="v3.3.7/js/bootstrap.min.js"></script>
-  </body>
+	</section>
+
+	<!--=====================================
+		Part 5
+	======================================-->
+
+	<footer class="row">
+		
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&copy; All rights reserved.</div>
+		
+	</footer>
+
+</div>
+    
+<script src="js/index.js"></script>
+	
+</body>
 </html>
